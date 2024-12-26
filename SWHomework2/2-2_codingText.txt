@@ -1,0 +1,13 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(string my_string, string is_prefix) {
+    int idx = 0;
+    for (auto ch : is_prefix) {
+        if (ch != my_string[idx]) return 0;
+        else idx+=1;
+    }
+    return 1;
+}
